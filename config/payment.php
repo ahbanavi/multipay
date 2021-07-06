@@ -176,6 +176,14 @@ return [
             'callbackUrl' => '',
             'description' => 'payment using sepehr(saderat)',
         ],
+        'vandar' => [
+            'apiPurchaseUrl' => 'https://ipg.vandar.io/api/v3/send',
+            'apiPaymentUrl' => 'https://ipg.vandar.io/v3/',
+            'apiVerificationUrl' => 'https://ipg.vandar.io/api/v3/verify',
+            'merchantId' => '',
+            'callbackUrl' => 'http://localhost/path/to',
+            'description' => 'payment using vandar',
+        ],
         'yekpay' => [
             'apiPurchaseUrl' => 'https://gate.yekpay.com/api/payment/server?wsdl',
             'apiPaymentUrl' => 'https://gate.yekpay.com/api/payment/start/',
@@ -250,6 +258,7 @@ return [
         'sadad' => \Shetabit\Multipay\Drivers\Sadad\Sadad::class,
         'saman' => \Shetabit\Multipay\Drivers\Saman\Saman::class,
         'sepehr' => \Shetabit\Multipay\Drivers\Sepehr\Sepehr::class,
+        'vandar' => \Shetabit\Multipay\Drivers\Vandar\Vandar::class,
         'yekpay' => \Shetabit\Multipay\Drivers\Yekpay\Yekpay::class,
         'zarinpal' => \Shetabit\Multipay\Drivers\Zarinpal\Zarinpal::class,
         'zibal' => \Shetabit\Multipay\Drivers\Zibal\Zibal::class,
